@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: white;
+            padding: 5px 0;
+            font-size: 40px;
+        }
+        .top{
+            margin: 0 400px;
+            color: white;
+            font-size: 20px;
+        }
+        .parent{
+            display: flex;
+            font-size: 20px;
+            color: white;
+        }
+        li{
+            font-size: 20px;
+            color: white;
+        }
+        .fbl{
+            height: 50px;
+            width: 50px;
+        }
+        table{
+            border: solid white 1px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: solid white;
+            padding: 20px;
+        }
+        .child{
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body background="background.jpg">
+    <div class="top">
+        <center><img src="1.jpg" width="150px" height="200px"></center><br>
+        <h1>Srijan Dhakal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit asperiores expedita quam, repellat, quaerat fugit doloribus molestias, exercitationem sint iure debitis saepe ducimus deleniti quidem quos dolorem rerum eum laudantium vitae suscipit. Itaque perferendis blanditiis accusamus ullam fugit sapiente beatae architecto enim iste? Odio aspernatur odit necessitatibus itaque mollitia officia.</p>
+    </div>
+    <div class="parent">
+        <div class="child c1">
+            <ul>
+                <li><a href="https://www.facebook.com/Amrish059/"><img src="fb.png" class="fbl"><br>Facebook</a></li>
+                <li><a href="https://www.instagram.com/srijan_dh/"><img src="il.jpg" class="fbl"><br>Instagram</a></li>
+            </ul> 
+        </div>
+        <div class="child c2">
+            <table>
+                <tr>
+                    <th class="m">Work place</th>
+                    <th class="s">Experiance</th>
+                    <th class="l">Achivenent</th>
+                </tr>
+                <tr>
+                    <td class="m"></td>
+                    <td class="s"></td>
+                    <td class="l"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
