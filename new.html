@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            display: flex;
+            height: 100vh;
+        }
+        .st{
+            width: 33.33%;
+            height: 100vh;
+        }
+        .s{
+            border: solid black;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+        .submit{
+            background-color: green;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 5px solid green;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="f st"></div>
+        <div class="s st">
+            <h1><center>Form</center></h1>
+            <form>
+            <h2>Name</h2>
+            <input type="text" name="name" placeholder="Name"><br>
+            <h2>class</h2>
+            <input type="number" name="class" placeholder="class"><br>
+            <h2>Roll</h2>
+            <input type="number" name="roll" placeholder="Roll No"><br>
+            <h2>Phone</h2>
+            <input type="tel" name="phone" placeholder="Phone no"><br>
+            <h2>Email</h2>
+            <input type="email" name="email" placeholder="Email"><br>
+            <h2>Gender</h2>
+            <input type="radio" name="gender" value="male" placeholder="Male">Male
+            <input type="radio" name="gender" value="female" placeholder="Female">Female<br>
+            <h2>Subject</h2>
+            <input type="checkbox" name="subject" value="Eng" placeholder="English"> English
+            <input type="checkbox" name="subject" value="maths" placeholder="Maths"> Maths<br>
+            <h2>Points</h2>
+            <input type="number" class="points" placeholder="Points"><br>
+            <input type="submit" valse="submit" placeholder="Submit" class="submit">
+            </form>
+        </div>
+        <div class="t st"></div>
+    </div>
+</body>
+</html>
