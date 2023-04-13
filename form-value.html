@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            display: flex;
+            height: 70vh;
+        }
+        .st{
+            width: 33.33%;
+            height: 70vh;
+        }
+        .s{
+            border: solid black;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            font-size: 15px;
+        }
+        .submit{
+            background-color: green;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .chart{
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            border: 0;
+        }
+        table,tr,th,td{
+            border: solid black;
+            border-collapse: collapse;
+            padding: 15px 20px;
+            font-size: 20px;
+        }
+        #user_info {
+        display: none;
+        }
+        .submit:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="f st"></div>
+        <div class="s st">
+            <h1><center>Form</center></h1>
+            <form>
+            <h2>Name</h2>
+            <input type="text" name="name" id="name" placeholder="Name"><br>
+            <h2>Grade</h2>
+            <input type="number" name="grade" id="grade" placeholder="Grade"><br>
+            <h2>Roll</h2>
+            <input type="number" name="roll" id="roll" placeholder="Roll No"><br>
+            <h2>Phone</h2>
+            <input type="tel" name="phone" id="phone" placeholder="Phone no"><br>
+            <h2>Email</h2>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+            <input type="submit" value="submit" placeholder="Submit" class="submit">
+            </form>
+        </div>
+        <div class="t st"></div>
+    </div>
+    <div>
+        <table class="chart" id="user_info">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>ROll No.</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        const form = document.querySelector("form")
+        const table = document.querySelector("#user_info tbody")
+        
+        form.addEventListener("submit", function (event){
+            event.preventDefault();
+
+            //fomr value
+            const name = document.querySelector("#name").value;
+            const grade = document.querySelector("#grade").value;
+            const email = document.querySelector("#email").value;
+            const phone = document.querySelector("#phone").value;
+            const roll = document.querySelector("#roll").value;
+
+            const row = table.insertRow();
+            const nameCell = row.insertCell(0);
+            const gradeCell = row.insertCell(1);
+            const rollCell = row.insertCell(2);
+            const emailCell = row.insertCell(3);
+            const phoneCell = row.insertCell(4);
+            nameCell.innerHTML = name;
+            gradeCell.innerHTML = grade;
+            rollCell.innerHTML = roll;
+            emailCell.innerHTML = email;
+            phoneCell.innerHTML = phone;
+
+            form.reset();
+
+        document.querySelector("#user_info").style.display = "block";
+    });
+        
+    </script>
+</body>
+</html>
