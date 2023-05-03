@@ -4,15 +4,24 @@
     padding: 0;
 }
 
-.c:hover,a:hover{
-    cursor: pointer;
+.c:hover{
     background-color: black;
     color: white;
     transition-duration: 0.6s;
-    padding: 7px 150px;
+    padding: 7px 100px;
+}
+a:hover{
+    cursor: pointer;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 li{
-    display: inline-block;
+    padding: 7px 100px;
 }
 a{
     font-family: "Times New Roman", Times, serif;
@@ -48,4 +57,6 @@ a{
     display: flex;
     height: 5vh;
     width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
