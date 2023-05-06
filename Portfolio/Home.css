@@ -4,59 +4,34 @@
     padding: 0;
 }
 
-.c:hover{
-    background-color: black;
-    color: white;
-    transition-duration: 0.6s;
-    padding: 7px 100px;
-}
-a:hover{
-    cursor: pointer;
-    color: white;
-}
+
 ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+   
+      /* height: 400px; */
+      display: flex;
+      /* flex-direction: column; */
+      /* background: #f4f4f4; */
+      /* Always on the main axis start, center, end, space around, space between */
+      justify-content: space-between; 
+      /* Always on the cross axis */
+      align-items: start;
+      list-style-type: none;
 }
-li{
-    padding: 7px 100px;
-}
+
 a{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: none;
-}
-.c{
-    border: 1px solid black;
-    background-color: aqua;
-    width: 20%;
+    flex-basis: 100px;
+    height: 40px;
+    margin: 10px;
+    color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: none;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: aqua;
+    
 }
-.navbar{
-    display: flex;
-    height: 5vh;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+a:hover{
+    color: white;
+    background-color: black;
 }

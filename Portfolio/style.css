@@ -8,65 +8,54 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Navigation bar styles */
-  nav {
-    background-color: #333;
-    height: 60px;
-    display: flex;
-    max-width: 1vw;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
+
+ 
   
   .menu {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .menu li {
-    border: 1px solid black;
-    padding: 7px 100px;
-    margin: 0 10px;
+    gap: 1 rem;
+    margin: 0;
+    justify-content: space-between;
+    padding: 0;
     list-style: none;
-  }
-  .menu li:hover {
-    background-color: black;
-    color: white;
-    transition-duration: 0.6s;
-    padding: 7px 100px;
-  }
+    border: 1px solid orange;
 
+  }
   
-  
-  .menu li a {
+  .menu a {
+    width: max-content;
+    height: max-content;
+    background-color: aqua;
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .menu li a:hover {
-    color: rgb(175, 255, 175);
-  }
-  
-  .download{
-    border: 1px solid red;
-    border-radius: 20px;
-    padding: 5px;
+    margin: 10px;
   }
 
-  .download:hover{
-    background-color: #5e5e5e;
-  }
+  .flex-container{
+    /* height: 400px; */
+    display: flex;
+    /* flex-direction: column; */
+    background: #f4f4f4;
+    /* Always on the main axis start, center, end, space around, space between */
+    justify-content: space-between; 
+    /* Always on the cross axis */
+    align-items: start;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+
+a{
+    flex-basis: 100px;
+    height: 100px;
+    background-color: #254de4;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+ul{
+  
+}
