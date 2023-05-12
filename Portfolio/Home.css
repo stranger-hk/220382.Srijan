@@ -3,11 +3,6 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 64cab36b3978d2f8f847866f2d4e9d143a9115d3
 ul{
    
       /* height: 400px; */
@@ -23,7 +18,6 @@ ul{
 
 a{
     flex-basis: 100px;
-<<<<<<< HEAD
     height: 6vh;
     margin: 10px;
     color: black;
@@ -49,14 +43,9 @@ a:hover{
     width: 50%;
 }
 .mtr{
-=======
-    height: 40px;
-    margin: 10px;
-    color: black;
->>>>>>> 64cab36b3978d2f8f847866f2d4e9d143a9115d3
     display: flex;
+    justify-content: center;
     align-items: center;
-<<<<<<< HEAD
 }
 .mbl{
     display: flex;
@@ -135,15 +124,3 @@ p{
     color:#ffffff;
     }
 }
-=======
-    justify-content: center;
-    flex-grow: 1;
-    background-color: aqua;
-    
-}
-
-a:hover{
-    color: white;
-    background-color: black;
-}
->>>>>>> 64cab36b3978d2f8f847866f2d4e9d143a9115d3
