@@ -3,60 +3,124 @@
     margin: 0;
     padding: 0;
 }
-
-.c:hover{
-    background-color: black;
-    color: white;
-    transition-duration: 0.6s;
-    padding: 7px 100px;
-}
-a:hover{
-    cursor: pointer;
-    color: white;
-}
 ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+   
+      /* height: 400px; */
+      display: flex;
+      /* flex-direction: column; */
+      /* background: #f4f4f4; */
+      /* Always on the main axis start, center, end, space around, space between */
+      justify-content: space-between; 
+      /* Always on the cross axis */
+      align-items: start;
+      list-style-type: none;
 }
-li{
-    padding: 7px 100px;
-}
+
 a{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: none;
-}
-.c{
-    border: 1px solid black;
+    flex-basis: 100px;
+    height: 6vh;
+    margin: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
     background-color: aqua;
-    width: 20%;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+.m{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+}
+.mc{
+    width: 50%;
+}
+.mtr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.mbl{
+    display: flex;
+    align-items: center;
+}
+h2{
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 40px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: #000000;
-    font-weight: 400;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
     text-decoration: none;
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
+    animation: Color 20s linear infinite;
 }
-.navbar{
-    display: flex;
-    height: 5vh;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
+@keyframes Color{
+    0%{
+    color:#ffffff;
+    }
+    
+    10%{
+    color:#c6c4c4;
+    }
+    
+    20%{
+    color:#8b8b8b;
+    }
+    
+    30%{
+    color:#595959;
+    }
+    
+    40%{
+    color:#393939;
+    }
+    
+    50%{
+    color:#000000;
+    }
+    60%{
+    color:#000000;
+    }
+    
+    70%{
+    color:#8b8b8b;
+    }
+    
+    80%{
+    color:#393939;
+    }
+    
+    90%{
+    color:#595959;
+    }
+    
+    80%{
+    color:#c6c4c4;
+    }
+    
+    100%{
+    color:#ffffff;
+    }
 }
