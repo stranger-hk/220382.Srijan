@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function lightmode(){
+            document.getElementById("Demo").classList.remove('darkmode');
+        }
+        function darkmode(){
+            document.getElementById("Demo").classList.add('darkmode');
+        }
+    </script>
+    <style>
+        .darkmode{
+            background-color: black;
+            color: white;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Demo" class="container"><h1>Click the modes to change between dark and light mode</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum.</p>
+    </div>
+    <div>
+        <button onclick="lightmode()">lightmode</button>
+        <button onclick="darkmode()">Darkmode</button>
+    </div>
+</body>
+</html>

@@ -8,7 +8,39 @@
 </head>
 <body>
     <script>
-        
+        function printDay(){
+            var dayNumber = parseInt(document.getElementById("dayNumber".value));
+            var result = document.getElementById("result");
+
+            if (dayNumber >=1 && dayNumber <=7){
+                switch (dayNumber){
+                    case 1:
+                        result.textContent = "Sunday";
+                        break;
+                    case 2:
+                        result.textContent = "Monday";
+                        break;
+                    case 3:
+                        result.textContent = "Tuesday";
+                        break;
+                    case 4:
+                        result.textContent = "Wednesday";
+                        break;
+                    case 5:
+                        result.textContent = "Thursday";
+                        break;
+                    case 6:
+                        result.textContent = "Friday";
+                        break;
+                    case 7:
+                        result.textContent = "Saturday";
+                        break;
+                }
+            }
+            else{
+                result.textContent = "Error";
+            }
+        }
     </script>
 </body>
 </html>
