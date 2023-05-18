@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+    function validateForm() {
+        var name = document.forms["myForm"]["name"].value;
+        var email = document.forms["myForm"]["email"].value;
+        var password = document.forms["myForm"]["password"].value;
+        var contact = document.forms["myForm"]["contact"].value;
+
+        if (name == "") {
+            alert("Please enter your name.");
+            return false;
+        }
+        if (contact == "") {
+            alert("Please enter your Contact no.");
+            return false;
+        }
+        if (email == "") {
+            alert("Please enter your email.");
+            return false;
+        }
+        if (password == "") {
+            alert("Please enter your Password.");
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        <center><h1>Form</h1></center>
+        <ul><pre>
+            <li>Name:         <input type="text" id="name" name="name" placeholder="Name"></li>
+            <li>Contact info: <input type="tel" id="contact" name="contact" placeholder="98********"></li>
+            <li>Email:        <input type="email" id="email" name="email" placeholder="youremail@example.com"></li>
+            <li>Password:     <input type="password" id="password" name="password" placeholder="password"></li>
+            <li><input type="submit" id="submit"></li>
+        </ul></pre>
+        
+        
+    </form>
+</body>
+</html>
